@@ -1,0 +1,55 @@
+{
+  "provider": "taxley",
+  "sources": [
+    "taxley-openapi.json"
+  ],
+  "outputs": [
+    "taxley-tools-api-openapi.yml"
+  ],
+  "archived": [
+    "archived openapi/taxley-openapi.json"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "taxley-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/corporation-tax -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/corporation-tax -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/deadlines -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/deadlines -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/late-penalty -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/late-penalty -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/directors-loan -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/directors-loan -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/capital-allowances -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/capital-allowances -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/chargeable-gains -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/chargeable-gains -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/company-size -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/company-size -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/long-period -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/long-period -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/company-car -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/company-car -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/company-van -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/company-van -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/mileage-allowance -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/mileage-allowance -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/home-office -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/home-office -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/trivial-benefits -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/trivial-benefits -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/dividend-reserves -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/dividend-reserves -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/salary-dividends -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/salary-dividends -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/sole-trader-vs-limited -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/sole-trader-vs-limited -> Tools",
+    "taxley-openapi.json: tagged paths GET /api/v1/tools/director-pension -> Tools",
+    "taxley-openapi.json: tagged paths POST /api/v1/tools/director-pension -> Tools",
+    "taxley-openapi.json: declared missing tag: Tools",
+    "apis.yml register: written (+1 apis, 2 total)"
+  ],
+  "skipped": []
+}

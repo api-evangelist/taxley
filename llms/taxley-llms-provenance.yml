@@ -1,0 +1,6 @@
+generated: '2026-10-15'
+method: probed
+generator: harvest-llms.py
+source: https://taxley.co.uk/llms.txt
+bytes: 15270
+note: saved verbatim; the provider's own document

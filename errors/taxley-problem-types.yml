@@ -1,0 +1,26 @@
+generated: '2026-10-15'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/taxley-openapi.json
+format: custom
+envelope:
+  media_type: application/json
+  schema: ValidationError
+coverage:
+  operations: 35
+  statuses_declared: 2
+problems:
+- status: 422
+  title: Unprocessable Content
+  description: 'The input was not valid: one plain-English message per field.'
+  operations: 34
+  media_types:
+  - application/json
+  schema: ValidationError
+- status: 429
+  title: Too Many Requests
+  description: Too many requests. Wait a minute and try again.
+  operations: 34
+  media_types: []
+  schema: null

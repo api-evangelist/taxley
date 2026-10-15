@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@vocab": "https://taxley.co.uk/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "taxley": "https://taxley.co.uk/schema#",
+    "ToolRun": "taxley:ToolRun",
+    "tool": {
+      "@id": "taxley:tool",
+      "@type": "xsd:string"
+    },
+    "input": {
+      "@id": "taxley:input"
+    },
+    "result": {
+      "@id": "taxley:result"
+    },
+    "page_url": {
+      "@id": "taxley:page_url",
+      "@type": "@id"
+    },
+    "share_url": {
+      "@id": "taxley:share_url",
+      "@type": "@id"
+    },
+    "calculated_by": {
+      "@id": "taxley:calculated_by",
+      "@type": "xsd:string"
+    },
+    "disclaimer": {
+      "@id": "taxley:disclaimer",
+      "@type": "xsd:string"
+    },
+    "ValidationError": "taxley:ValidationError",
+    "message": {
+      "@id": "taxley:message",
+      "@type": "xsd:string"
+    },
+    "errors": {
+      "@id": "taxley:errors"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Taxley (UK Corporation Tax API) API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Taxley (UK Corporation Tax API)'s own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-15) from openapi/taxley-openapi.json.",
+  "dcterms:created": "2026-10-15",
+  "dcterms:source": [
+    "openapi/taxley-openapi.json"
+  ]
+}

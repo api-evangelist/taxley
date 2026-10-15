@@ -1,0 +1,10 @@
+generated: '2026-10-15'
+method: probed
+source: https://taxley.co.uk/mcp
+deployment:
+  mode: remote
+  endpoint: https://taxley.co.uk/mcp
+  install: null
+  package: null
+  auth: none
+  verified: probed

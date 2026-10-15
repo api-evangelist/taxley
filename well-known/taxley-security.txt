@@ -1,0 +1,6 @@
+# Security contact for taxley.co.uk (RFC 9116)
+# If you believe you have found a security vulnerability in Taxley, please tell us.
+Contact: mailto:support@taxley.co.uk
+Expires: 2027-07-17T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://taxley.co.uk/.well-known/security.txt

@@ -1,28 +1,123 @@
 aid: taxley
+
 name: Taxley (UK Corporation Tax API)
-description: 'Taxley (UK Corporation Tax API) is a company surfaced via the API Evangelist harvest backlog
-  (source: new-submission) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://taxley.co.uk/images/og/taxley-share-v1.jpg
+
+description: Taxley provides free UK Corporation Tax calculators and a public JSON API for developers and AI assistants. It offers tools to compute
+  corporation tax, deadlines, penalties, and related calculations without requiring an API key. Results link back to Taxley’s website for verification.
+  The service is operated by Taxley UK LLP, a UK‑registered limited liability partnership, and integrates with HMRC filing processes.
+
 url: https://raw.githubusercontent.com/api-evangelist/taxley/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-15 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-15'
+
 modified: '2026-10-15'
+
 tags:
 - Company
-apis: []
+- Tax
+- UK
+- Finance
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: AgenticAccess
+  url: agentic-access/taxley-agentic-access.yml
+- type: Plans
+  url: plans/taxley-plans-pricing.yml
+- type: Spectral
+  url: rules/taxley-rules.yml
+- type: JSONLD
+  url: json-ld/taxley-context.jsonld
+- type: Vocabulary
+  url: vocabulary/taxley-vocabulary.yml
+- type: DataModel
+  url: data-model/taxley-data-model.yml
+- type: ErrorCatalog
+  url: errors/taxley-problem-types.yml
+- type: Conformance
+  url: conformance/taxley-conformance.yml
+- type: LLMsTxt
+  url: llms/taxley-llms.txt
+- type: MCPServer
+  url: mcp/taxley-mcp.yml
+- type: SecurityTxt
+  url: well-known/taxley-security.txt
+- type: WellKnown
+  url: well-known/taxley-well-known.yml
+- type: Hosts
+  url: hosts/taxley-hosts.yml
+- type: TermsOfService
+  url: https://taxley.co.uk/legal/terms
+- type: Support
+  url: https://taxley.co.uk/help
+- type: Security
+  url: https://taxley.co.uk/security
+- type: PrivacyPolicy
+  url: https://taxley.co.uk/legal/privacy
+- type: Pricing
+  url: https://taxley.co.uk/pricing
+- type: Newsroom
+  url: https://taxley.co.uk/press
+- type: Login
+  url: https://taxley.co.uk/login
+- type: VulnerabilityDisclosure
+  url: security/taxley-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/taxley-domain-security.yml
 - type: Website
   url: https://taxley.co.uk
 - type: Documentation
   url: https://taxley.co.uk/developers
+
+apis:
+- name: Taxley API
+  description: Taxley provides free UK corporation tax calculators via a public JSON API.
+  humanURL: https://taxley.co.uk/developers
+  baseURL: null
+  aid: taxley:taxley-api
+- aid: taxley:taxley-tools-api
+  name: Taxley (UK Corporation Tax API) Tools API
+  description: The Tools API from Taxley (UK Corporation Tax API) — 18 operation(s) for tools.
+  humanURL: https://taxley.co.uk/developers
+  tags:
+  - Tools
+  properties:
+  - type: OpenAPI
+    url: openapi/taxley-tools-api-openapi.yml
 x-submission-notes: Free no-key UK corporation tax calculators
+
 x-submission-probe: root 200, developers 200, /api/v1/openapi.json 200, soft-404 OK
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The developers page returns HTML with no OpenAPI or other machine‑readable contract.
+  evidence:
+  - url: https://taxley.co.uk/developers
+    status: 200
+  checked: '2026-10-15'
+
 x-submitted-by: alex@taxley.co.uk (apis.io/add, 2026-10-14)
+x-enrichment:
+  date: '2026-10-15'
+  status: enriched
+  artifacts_added: 24
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

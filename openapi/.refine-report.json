@@ -1,17 +1,16 @@
 {
   "provider": "taxley",
   "sources": [
-    "taxley-openapi.json"
+    "_original/taxley-openapi.json"
   ],
   "outputs": [
     "taxley-tools-api-openapi.yml"
   ],
-  "archived": [
-    "archived openapi/taxley-openapi.json"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
     "taxley-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "taxley-openapi.json: tagged paths GET /api/v1/tools -> Tools",
     "taxley-openapi.json: tagged paths GET /api/v1/tools/corporation-tax -> Tools",
@@ -49,7 +48,9 @@
     "taxley-openapi.json: tagged paths GET /api/v1/tools/director-pension -> Tools",
     "taxley-openapi.json: tagged paths POST /api/v1/tools/director-pension -> Tools",
     "taxley-openapi.json: declared missing tag: Tools",
-    "apis.yml register: written (+1 apis, 2 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "taxley-tools-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

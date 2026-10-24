@@ -31,3 +31,28 @@ plans:
     description: "Small-company (FRS 102 Section 1A) accounts, filing to HMRC and Companies House."
     limits: []
     features: []
+x-canonical:
+  generated: '2026-10-23'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Dormant company return
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Return with micro-entity accounts
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Return with small-company accounts
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
